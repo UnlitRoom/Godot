@@ -1,0 +1,19 @@
+########################################
+#GODOT 3.5.1v
+#Add this script in your AnimationPlayer
+########################################
+
+#We need to get the functionality of our animationplayer method (ex: play and stop)
+extends AnimationPlayer
+
+#We add a simple function inside _ready virtual method 
+func _ready() -> void:
+
+#start animation:
+	self.play("your animation player root")
+  
+#stop animation (if you need it or not):
+	self.stop()
+  
+########################################
+#How to loop a rigged character (some setup before importing to Godot) -> https://youtu.be/G2X1TYQRzqA
